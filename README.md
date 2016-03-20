@@ -1,5 +1,5 @@
 # thinkPHP 5.0.0 with migration
-添加 thinkPHP 5.0，支持 migration 迁移数据库
+添加 [thinkPHP 5.0](https://github.com/top-think/think)，支持 migration 迁移数据库
 
 ###感谢 [Phnix](https://phinx.org/) 提供的开源支持
 
@@ -14,7 +14,7 @@ PHP Database Migrations For Everyone
 
 thinkPHP 5 with migration
 -------
-基于原生 thinkPHP 5.0 命令行工具，已将php console 改为 php think (^-^)，融入了 [Phinx](https://phinx.org/) 的数据库迁移
+基于原生 [thinkPHP 5.0](https://github.com/top-think/think) 命令行工具，为提高 B 格已将php console 改为 php think (^-^)，融入了 [Phinx](https://phinx.org/) 的数据库迁移
 
 常用命令
 -------

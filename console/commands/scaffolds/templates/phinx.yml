@@ -1,0 +1,37 @@
+paths:
+    migrations: %%PHINX_CONFIG_DIR%%/datebase/migrations
+    seeds: %%PHINX_CONFIG_DIR%%/datebase/seeds
+
+templates:
+    migration: %%PHINX_CONFIG_DIR%%/console/commands/Scaffolds/templates/Migration.template.php.dist
+    seeder: %%PHINX_CONFIG_DIR%%/console/commands/Scaffolds/templates/Seeder.template.php.dist
+
+environments:
+    default_migration_table: migration
+    default_database: development
+    production:
+        adapter: $dbAdapter
+        host: $dbHost
+        name: $dbName
+        user: $dbUser
+        pass: $dbPassword
+        port: $dbPort
+        charset: $dbCharset
+
+    development:
+        adapter: $dbAdapter
+        host: $dbHost
+        name: $dbName
+        user: $dbUser
+        pass: $dbPassword
+        port: $dbPort
+        charset: $dbCharset
+
+    testing:
+        adapter: $dbAdapter
+        host: $dbHost
+        name: $dbName
+        user: $dbUser
+        pass: $dbPassword
+        port: $dbPort
+        charset: $dbCharset

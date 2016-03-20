@@ -1,0 +1,47 @@
+#!/usr/bin/env php
+<?php
+// +----------------------------------------------------------------------
+// | ThinkPHP [ WE CAN DO IT JUST THINK ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2006-2015 http://thinkphp.cn All rights reserved.
+// +----------------------------------------------------------------------
+// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+// +----------------------------------------------------------------------
+// | Author: yunwuxin <448901948@qq.com>
+// +----------------------------------------------------------------------
+
+// 定义项目路径
+define('APP_PATH', './application/');
+// 定义项目 命令行目录
+define('CONSOLE_PATH', './console/');
+// 定义应用模式为console
+define('APP_MODE', 'console');
+// 开启调试模式
+define('APP_DEBUG', true);
+// 关闭应用自动执行
+define('APP_AUTO_RUN', false);
+//定义项目命令行脚手架模板目录
+define('APP_SCAFFOLD_TEMPLATE_DIR', './console/commands/scaffolds/templates');
+
+// 加载框架引导文件
+require './thinkphp/start.php';
+// 实例化console
+$console = new \console\Console('Think Console', '0.1');
+
+// 读取指令集
+if (is_file(APP_PATH . 'command' . EXT)) {
+    $commands = include APP_PATH . 'command' . EXT;
+    if (is_array($commands)) {
+        foreach ($commands as $command) {
+            if (class_exists($command)) {
+                // 注册指令
+                $object = new $command();
+                if ($object instanceof \think\console\command\Command) {
+                    $console->add($object);
+                }
+            }
+        }
+    }
+}
+// 运行
+$console->run();

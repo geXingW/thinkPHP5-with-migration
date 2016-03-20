@@ -3,10 +3,11 @@
     "description": "the new thinkphp framework",
     "type": "project",
     "keywords": ["database", "thinkphp", "migration", "mysql"],
+    "license": "Apache2",
     "authors": [
         {
             "name": "geXing",
-            "email": "geXing@hotmail.com"
+            "email": "wolfs_9@hotmail.com"
         }
     ],
     "require": {

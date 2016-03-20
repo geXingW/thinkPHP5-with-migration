@@ -1,6 +1,8 @@
 # thinkPHP 5.0.0 with migration
-===
 添加 thinkPHP 5.0，支持 migration 迁移数据库
+
+感谢 [Phnix](https://phinx.org/) 提供的开源支持
+------
 
 migration
 ---------- 

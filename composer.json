@@ -1,6 +1,6 @@
 {
     "name": "thinkphp/thinkphp-plus",
-    "description": "the new thinkphp framework",
+    "description": "thinkphp 5.0.0 with phinx database migration",
     "type": "project",
     "keywords": ["database", "thinkphp", "migration", "mysql"],
     "license": "Apache2",

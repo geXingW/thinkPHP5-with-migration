@@ -32,6 +32,7 @@ thinkPHP 5 with migration
 >
 > ## 返回到最近一次的 migrate 操作
 >  + php think migrate:rollback
+>
 > ## 返回到指定版本的 migrate 操作
 >  + php think migrate:rollback -t timestamp
 >
@@ -43,6 +44,14 @@ thinkPHP 5 with migration
 >
 > ## 查看状态
 >  + php think migrate:status
+
+配置
+-----
+> 执行 php think migrate:init，生成的 phinx.yml 中数据库配置是 APP_PATH/database.php 中的数据库配置
+>
+> 如果有多个数据库, 可以自己修改 phinx.yml, Migration调用的是phinx.yml中的数据库配置
+> 
+> 默认phinx.yml、migration和seeder的模板文件在 console/commands/scaffolds/templates 中， migration和seeder的模板位置可以在phinx.yml中配置
 
 获取更多支持
 -----

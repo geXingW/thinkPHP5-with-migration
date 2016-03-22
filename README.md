@@ -1,7 +1,7 @@
 # thinkPHP 5.0.0 with migration
 添加 [thinkPHP 5.0](https://github.com/top-think/think)，支持 migration 迁移数据库
 
-###感谢 [Phnix](https://phinx.org/) 提供的开源支持
+###感谢 [Phinx](https://phinx.org/) 提供的开源支持
 
 
 migration
@@ -55,7 +55,7 @@ thinkPHP 5 with migration
 
 获取更多支持
 -----
-查看 [Phnix文档](http://docs.phinx.org/en/latest) 获取更多帮助
+查看 [Phinx文档](http://docs.phinx.org/en/latest) 获取更多帮助
 
 问题反馈
 ----
